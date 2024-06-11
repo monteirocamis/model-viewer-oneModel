@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SteamPunk Camera VR</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        model-viewer{
+            width: 400px;
+            height: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+    <model-viewer src="assets/coat.glb"
+        camera-controls
+        alt="A 3D model of a coat" 
+        ar 
+        ar-modes="webxr scene-viewer quick-look" environment-image="assets/apartment.hdr" 
+        skybox-image="assets/apartment.hdr"
+    >
+<!-- ar-placement="wall" -->
+</model-viewer>
+</body>
+</html>
